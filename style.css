@@ -114,7 +114,8 @@ p{
     width: 100%;
     height: 80%;
     display: flex;
-    justify-content: left;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     padding-top: 7%;
     padding-left: 10%;
     padding-right: 15%;
@@ -122,36 +123,38 @@ p{
     font-family: "Raleway", serif;
     font-style: normal;
     padding-bottom: 20px;
+    text-align: center; /* Center text */
 }
 
-.welcome{
+.landing_page_welcome {
     font-family: "Press Start 2P", serif;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     font-size: 1.2em;
 }
 
-.my_name{
+.landing_page_my_name {
     font-weight: 700;
     font-size: 6em;
-    margin-bottom: 5px;
+    padding: 5px 0 5px 0;
+    margin: 0;
 }
 
-.my_job{
+.landing_page_my_job {
     font-weight: 800;
     font-size: 5em;
-    margin-bottom: 15px;
+    margin: 0;
 }
 
-.des {
+.landing_page_description_container {
     width: 67%;
 }
 
-.my_des{
+.landing_page_my_description {
     font-size: 1.3em;
-    margin-top: 15px;
+    padding-top: 20px;
 }
 
-.my_firm{
+.landing_page_my_firm {
     color: #0A21C0;
     font-weight: 600;
 }
@@ -323,6 +326,8 @@ input::placeholder{
 
 .our_team{
     font-size: 4em;
+    align-self: center;
+    justify-self: center;
 }
 
 .image-container{
@@ -537,4 +542,149 @@ input::placeholder{
 .footer_main{
     width: 100vw;
     height: 100vh;
+}
+
+@media screen and ( max-width: 768px ) {
+    .landing_page {
+        padding: 0;
+    }
+    .landing_page_description {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .landing_page_welcome {
+        font-size: 0.9em;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .landing_page_my_name {
+        font-size: 2.4em;
+        padding-bottom: 10px;
+        align-self: center;
+    }
+
+    .landing_page_my_job {
+        font-size: 1.8em;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+    .landing_page_description_container {
+        width: 100%;
+    }
+
+    .landing_page_my_description {
+        padding-top: 20px;
+        font-size: 1.1em;
+        text-align: justify;
+    }
+
+    .our_team{
+        font-size: 2.5em;
+    }
+
+    .about_us{
+        padding: 0;
+        height: 150vh;
+        overflow: hidden;
+    }
+    
+    .about_us_img{
+        width: ;
+    }
+
+    .person_description_first{}
+
+    .person_description_second{}
+
+
+    .about_us_description{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .jan_kowalski{
+        width: 100;
+        height: 50%;
+        margin-left: 10px;
+        align-self: flex-start;
+    }
+
+    .portfolio{
+        overflow: hidden;
+    }
+
+    .technology{
+        overflow: hidden;
+    }
+
+    .contact{
+        overflow: hidden;
+    }
+
+    .footer{
+        overflow: hidden;
+    }
+
+    .contact_forms{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_intro{
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+
+    .form_reflink_a{
+        margin-top: 20px;
+    }
+
+    .contact_social_media{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.5em;
+    }
+
+    .social_media_container{
+        width: 100%;
+        justify-content: space-evenly;
+        align-content:  center;
+        margin-top: 15;
+
+    }
+
+    .social_media > img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer{
+        font-size: 0.5em;
+        height: 8vh;
+        padding: 0 5px 0 5px;
+    }
+
+    .contact_image{
+        margin-left: 10px;
+        margin-right: 5px;
+        width: 5%;
+        margin: 0 5px 0 5px;
+    }
+
+    .copyright{
+        width: 30%;
+    }
+
+    .contact_image > img{
+        width: 20px;
+    }
+    
 }

@@ -70,14 +70,14 @@
         </div>
       </nav>
       <div class="landing_page_description"> 
-        <p class="welcome accent_color">Cześć, mam na imie</p>
-        <h1 class="my_name secondary_color">Jan Kowalski.</h1>
-        <h2 class="my_job">Tworzę strony internetowe.</h2>
-        <div class="des">
-          <p class="my_des">
+        <p class="landing_page_welcome accent_color">Cześć, mam na imie</p>
+        <h1 class="landing_page_my_name secondary_color">Jan Kowalski.</h1>
+        <h2 class="landing_page_my_job">Tworzę strony internetowe.</h2>
+        <div class="landing_page_description_container">
+          <p class="landing_page_my_description">
             Jestem inżynierem oprogramowania, który specjalizuje się w tworzeniu (a czasem również projektowaniu) wyjątkowych doświadczeń cyfrowych. 
             Obecnie skupiam się na budowaniu dostępnych, skupionych na ludziach stronach dla 
-            <span class="my_firm">PixelForgeCreation</span>.
+            <span class="landing_page_my_firm">PixelForgeCreation</span>.
           </p>
         </div>
       </div>
@@ -87,32 +87,44 @@
           </span>
       </div>
     </div>
-    <div class="about_us d-flex align-items-center flex-column" id="about_us">
+    <div class="about_us" id="about_us">
       <h2 class="our_team">Nasz zespół</h2>
-      <div class="about_us_description d-flex align-items-center justify-content-around">
+      <div class="about_us_description">
         <div class="image-container d-flex jan_kowalski">
-          <img src="img/jan_kowalski.png" alt="Jan Kowalski">
-          <div class="person_description mt-4">
-        <h2 class="about_us_name">Jan Kowalski</h2>
-        <h3 class="about_us_job">Frontend Developer</h3>
-        <p class="about_us_des">Specjalizuje się w nowoczesnym front-endzie, tworząc intuicyjne interfejsy użytkownika.</p>
-        <p class="about_us_abi">Umiejętności: HTML, CSS, JavaScript, React, optymalizacja wydajności, responsywny design.</p>
+          <div class="about_us_img">
+            <img src="img/jan_kowalski.png" class="img-fluid" alt="Jan Kowalski">
+          </div>
+          <div class=" mt-4">
+            <h2 class="about_us_name">Jan Kowalski</h2>
+            <h3 class="about_us_job">Frontend Developer</h3>
+          </div>
+          <div class="person_description_second mt-4">
+            <p class="about_us_des">Specjalizuje się w nowoczesnym front-endzie, tworząc intuicyjne interfejsy użytkownika.</p>
+            <p class="about_us_abi">Umiejętności: HTML, CSS, JavaScript, React, optymalizacja wydajności, responsywny design.</p>
           </div>
         </div>
         <div class="image-container d-flex anna_nowak">
-          <img src="img/anna_nowak.png" alt="Anna Nowak">
+          <div class="about_us_img">
+            <img src="img/anna_nowak.png" class="img-fluid" alt="Anna Nowak">
+          </div>
           <div class="person_description mt-4">
             <h2 class="about_us_name">Anna Nowak</h2>
             <h3 class="about_us_job">Backend Developer</h3>
+          </div>
+          <div class="person_description_second mt-4">
             <p class="about_us_des">Ekspertka od skomplikowanych algorytmów i wydajnych baz danych.</p>
             <p class="about_us_abi">Umiejętności: Python, Node.js, SQL, MongoDB, tworzenie API, bezpieczeństwo aplikacji.</p>
           </div>
         </div>
         <div class="image-container d-flex piotr_wisniewski">
-          <img src="img/piotr_wisniewski.png" alt="Piotr Wiśniewski">
+          <div class="about_us_img">
+            <img src="img/piotr_wisniewski.png" class="img-fluid" alt="Piotr Wiśniewski">
+          </div>
           <div class="person_description mt-4">
             <h2 class="about_us_name">Piotr Wiśniewski</h2>
             <h3 class="about_us_job">UI/UX Designer</h3>
+          </div>
+          <div class="person_description_second mt-4">
             <p class="about_us_des">Tworzy estetyczne i funkcjonalne rozwiązania w zakresie projektowania interfejsów użytkownika.</p>
             <p class="about_us_abi">Umiejętności: Adobe XD, Figma, prototypowanie, badania użytkowników, projektowanie responsywne, psychologia koloru.</p>
           </div>
@@ -191,45 +203,41 @@
       <div class="contact_social_media">
         <h2><span class="secondary_color" >Nasze</span> media społecznościowe</h2>
         <div class="social_media_container">
-          <div class="social_media_container">
             <a href="https://www.facebook.com" target="_blank">
                 <div class="social_media">
-                    <img src="img/facebook.svg" alt="facebook_logo">
+                    <img src="img/facebook.svg" class="img-fluid" alt="facebook_logo">
                 </div>
             </a>
             <a href="https://www.instagram.com" target="_blank">
                 <div class="social_media">
-                    <img src="img/instagram.svg" alt="instagram_logo">
+                    <img src="img/instagram.svg" class="img-fluid" alt="instagram_logo">
                 </div>
             </a>
             <a href="https://www.github.com" target="_blank">
                 <div class="social_media">
-                    <img src="img/github.svg" alt="github_logo">
+                    <img src="img/github.svg" class="img-fluid" alt="github_logo">
                 </div>
             </a>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <div class="social_media">
-                    <img src="img/website.svg" alt="website_logo">
+                    <img src="img/website.svg" class="img-fluid" alt="website_logo">
                 </div>
             </a>
-        </div>
         </div>
       </div>
     </div>
     <footer class="footer d-flex justify-content-center align-items-center">
-      <p>Copyright © by PixelForgeCreation 2025 | Wszelkie prawa zastrzeżone </p>
+      <div class="copyright">
+        <p>Copyright © by PixelForgeCreation 2025 | Wszelkie prawa zastrzeżone </p>
+      </div>
         <div class="contact_image">
-          <img src="img/phone.svg" alt="phone_logo">
+          <img src="img/phone.svg" class="img-fluid" alt="phone_logo">
         </div>
       <p>+48 123456789
         <div class="contact_image">
-          <img src="img/email.svg" alt="phone_logo">
+          <img src="img/email.svg" class="img-fluid" alt="phone_logo">
         </div>
         PixelForgeCreation@pfc.pl    
-        <div class="contact_image">
-          <img src="img/house.svg" alt="phone_logo">
-        </div>
-        Ostrołęcka 13, Warszawa</p>
     </footer>
     <script src="js/bootstrap.min.js"></script>
   </div>
