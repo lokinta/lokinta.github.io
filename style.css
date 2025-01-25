@@ -110,6 +110,11 @@ p{
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
 }
 
+.navbar-nav{
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .landing_page_description{
     width: 100%;
     height: 80%;
@@ -157,11 +162,6 @@ p{
 .landing_page_my_firm {
     color: #0A21C0;
     font-weight: 600;
-}
-
-.button_next_page{
-    width: 100%;
-    height: 6%;
 }
 
 .material-symbols-outlined{
@@ -241,7 +241,11 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(225deg, rgba(179,179,189,1) 0%, rgba(139,139,149,1) 100%);;
+    background-image: url('img/backgrond_contant.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .contact_title{
@@ -304,9 +308,10 @@ input::placeholder{
 }
 
 .footer{
-    height: 5vh;
-    border-top: #646464 2px solid;
-    background: linear-gradient(315deg, rgba(179,179,189,1) 0%, rgba(139,139,149,1) 100%);
+    height: 3vh;
+    color: #000000;
+    border-top: #000000 2px solid;
+    background: #626366;
 
 }
 
@@ -456,7 +461,6 @@ input::placeholder{
     color: #007830;
 }
 
-
 .blue_glowing_border{
     box-shadow: 0 0 15px #0A21C0;
 }
@@ -548,6 +552,40 @@ input::placeholder{
     .landing_page {
         padding: 0;
     }
+
+    .navbar{
+        padding: 0 10px 0 10px;
+    }
+
+
+    .firm_logo{
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+    .container-fluid{
+        padding: 0;
+    }
+
+    .navbar_background{
+        background-color: #B3B3BD;
+        box-shadow: 3px 3px 6px #2c2e3a, -3px 3px 6px #2c2e3a, 0px 3px 6px #2c2e3a;
+    }
+
+    .navbar_toggler:hover
+    {
+        box-shadow: 0px
+    }
+
+    .navbar_nav_phone{
+        margin: 0;
+    }
+
+    .navbar_nav_phone > li{
+        border-top: 1px solid #2c2e3a;
+    }
+
+
     .landing_page_description {
         padding-left: 5%;
         padding-right: 5%;
@@ -593,13 +631,16 @@ input::placeholder{
         overflow: hidden;
     }
     
-    .about_us_img{
-        width: ;
+    /*.about_us_img{
     }
 
-    .person_description_first{}
+    .person_description_first{
 
-    .person_description_second{}
+    }
+
+    .person_description_second{
+
+    }*/
 
 
     .about_us_description{
@@ -618,8 +659,86 @@ input::placeholder{
         overflow: hidden;
     }
 
-    .technology{
+    /*.technology{
         overflow: hidden;
+    }*/
+
+    .technology{
+        height: 110vh;
+        padding: 10px;
+    }
+
+    .technologie{
+        width: 100%;
+    }
+
+    .technologie > h2 {
+        font-size: 1.8em;
+    }
+
+    .styltechnologie{
+        height: 30%;
+        padding-top: 5px;
+    }
+
+    .styltechnologie > h3 {
+        font-size: 1.6em;
+    }
+
+    .technology_group{
+        height: 100%;
+        padding-top: 5px;
+    }
+
+    .technology_element{
+
+        font-size: 1em;
+        padding: 0 10px 0 10px;
+        margin: 0 15px 0 15px;
+        height: 20%;
+        min-height: 20px;
+        min-width: 12%;
+        width: auto;
+        font-size: 1em;
+        border-radius: 15px;
+        gap: 10px;
+        transition: all 0.3s ease-in-out; /* Add transition for smooth scaling */
+        box-shadow: 0 0 5px #0A21C0;
+    }
+
+    .technology_element:hover{
+        transform: scale(1.1); /* Enlarge the element on hover */
+        font-size: 1.1em;
+        box-shadow: 0 0 15px #16DB65;
+        color: #007830;
+    }
+
+    .portfolio_title{
+        font-size: 1.5em;
+    }
+
+    .animated_gallery{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        overflow-y: scroll;
+    }
+
+    .portfolio_image{
+        height: 40%;
+        width: 100%;
+    }
+
+    .portfolio_image:hover{
+        width: 100%
+    }
+
+    .portfolio > h2{
+        font-size: 1.2em;
     }
 
     .contact{
